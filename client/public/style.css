@@ -1,0 +1,527 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.my-3{
+    margin: 3px 0px;
+}
+
+.mb-3{
+    margin-bottom: 3px;
+}
+.mx-3{
+    margin: 0px 3px;
+}
+
+.container{
+    position: relative;
+    margin: 2px auto;
+}
+
+/**************************** bg-image *********************/
+/* .bg-image::before{
+    content: '';
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    overflow-x: hidden;
+} */
+
+
+/************************************** Navbar ************************************/
+.navbar ul div li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 13px;
+}
+
+.navbar ul div{
+    display: flex;
+}
+
+
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    /* border: 2px solid red; */
+    background-color: rgb(248, 244, 0);
+    /* border-radius: 10px; */
+    /* margin: 0px 0px; */
+    padding: 1px 10px;
+    box-shadow: 0px 0px 20px black;
+    width: 98%;
+
+}
+
+.navbar-items{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-link{
+    text-decoration: none;
+}
+
+.navbar-items:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.navbar-items:focus{
+    background-color: black;
+    color: white;
+}
+
+
+/********************* Login Page ******************************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* html, body{
+    height: 100vh;
+    margin: 0;
+} */
+
+
+/* body{
+    background: #c61951;
+    font-family: Montserrat;
+    color:#f8f7aa;
+} */
+
+
+#bg{
+    clip-path: circle(79% at 21% 3%);
+    background: #f0f0f0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+
+}
+
+
+.page-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    margin-top: 3%;
+    height: 80%;
+    width:49.44%;
+    box-shadow: 0px 0px 73px #050505;
+
+}
+
+.form-header{
+
+    width: 100%;
+    background: #C61951;
+    display: block;
+    padding-top: 12px;
+
+
+
+}
+
+.login-txt{
+    color: white;
+    font-size: 33pt;
+    background: #1b083d;
+    padding: 12px;
+    margin-left: -37px;
+    width: 70%;
+    text-align: center;
+    clip-path: polygon(0 0,100% 0,80% 100%, 0% 100%)
+}
+
+.dark-side{
+    width: 37px;
+    height: 37px;
+    /* margin-top: -41px; */
+    margin-left: -37px;
+    background-color: #170731;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%)
+}
+
+
+.form-body{
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-body > input{
+    margin: 10px;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 9px;
+    border: none;
+    /* border-radius: 4px; */
+    border:none;
+    background: transparent;
+   box-shadow: 0 0 2px #1b083d;
+ font-family: inherit;
+   border-radius:4px;
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: #673AB7;
+    box-shadow: 1px 0px 2px #c61951
+
+
+}
+
+/*
+input[type="button"]{
+  background: #1b083d;
+  color: #e2e2e2;
+  border: none;
+  border-radius: 4px;
+  font-size: 12pt;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px #1b1b1b;
+} */
+
+.login-submit-btn{
+  background: #1b083d;
+  color: #e2e2e2;
+  border: none;
+  border-radius: 4px;
+  font-size: 12pt;
+  margin: 10px 30px;
+  padding: 8px 10px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px #1b1b1b;
+}
+
+
+
+.forg-pwd{
+    color:#1b083d;
+    align-self: center;
+    padding: 11px;
+    font-size:9pt;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    .login-container{
+
+        width:80%;
+
+    }
+    .login-txt{
+        font-size: 24pt;
+    }
+}
+
+/************************** Landing - Home page **************************/
+.image{
+    cursor:default;
+    /* z-index: 0; */
+    background-image: url('./mainPage-image1.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 477px;
+    position: relative;
+    display: block;
+    right: -900px;
+    top: -40px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* text-align: right; */
+    box-shadow: 0px 0px 20px rgb(83, 82, 82);
+}
+
+.mainPage-text{
+    position: relative;
+    width: 600px;
+    cursor: default;
+    left: 100px;
+    top: 230px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.mainPage-text p{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mainPage-text-header{
+    font-size: 40px;
+}
+
+
+/************************* About page ****************************************/
+.about-contents{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.about-header-h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/************************ Roles page **************************************/
+.roles-container{
+    height: 100vh;
+    border: 2px solid red;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 230, 1);
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 2px 4px; */
+}
+
+.student-container{
+    border: 2px solid red;
+    padding: 30px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.student-container:hover{
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+.admin-container{
+    border: 2px solid rgb(255, 115, 0);
+    padding: 30px;
+    margin:10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.admin-container:hover{
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+.student-text-content{
+    border: 2px solid red;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 115, 0);
+
+}
+
+.student-text-content:hover{
+    background-color: yellow;
+}
+.teacher-text-content{
+    border: 2px solid red;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 115, 0);
+}
+
+.student-image{
+    border: 5px solid #fff;
+    /* background-image: url('./student.png'); */
+
+    height: 100px;
+    width: 100px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    position: relative;
+    margin: 0px auto;
+    top: 30px;
+    /* background-color: black; */
+}
+
+.students-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.teacher-image{
+    border: 5px solid #fff;
+    /* padding: 10px; */
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0px auto;
+    top: 30px;
+    /* background-image: url('./teacher.png') no-repeat cover center; */
+    /* background-color: black; */
+}
+
+.teachers-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.roles-header{
+    margin: 0px auto;
+}
+
+.roles-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    /* display: block; */
+}
+
+.role-back-button{
+    /* display: block; */
+    position: absolute;
+    padding: 10px;
+    margin: 10px 12px;
+    margin-top: 1px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.role-back-button:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+/************************ student_home **************************************/
+
+.stu-img{
+    cursor:default;
+    /* z-index: 0; */
+    background-image: url('./student2.png');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: block;
+    right: -900px;
+    top: -40px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* text-align: right; */
+    box-shadow: 0px 0px 20px rgb(83, 82, 82);
+}
+
+
+
+/************************ student_score **************************************/
+
+
+
+th,td{
+  /* padding-right: 100px; */
+   padding: 5px;
+}
+table, th, td {
+  border: 1px solid black;
+ border-collapse: collapse;
+}
+
+
+
+
+.tamble{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+   background-color: #E5B299;
+}
+thead{
+  background-color: #B4846C;
+}
+
+
+
+/************************ student_score **************************************/
+
+
+.quiz_list{
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  height: 180px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.quiz_content{
+  text-align: center;
+}
+
+
+
+/************************ teacher_home **************************************/
+
+.tea-img{
+    cursor:default;
+    /* z-index: 0; */
+    background-image: url('./teacher2.png');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    display: block;
+    right: -900px;
+    top: -40px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* text-align: right; */
+    box-shadow: 0px 0px 20px rgb(83, 82, 82);
+}
+
+
+
+
+
+.que_list{
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.que_content{
+  text-align: left;
+}
